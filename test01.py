@@ -1,6 +1,19 @@
 #!/usr/bin/python
 # -*- coding=utf-8 -*-
 
+str = "Hello World!"
+
+print str
+print str[0]
+print str[2:5]
+print str[2:]
+print str * 2
+print str + "TEST"
+
+
+
+
+
 x = 'a'
 y = 'b'
 
@@ -19,3 +32,4 @@ print b,
 print c
 
 del a,b
+
