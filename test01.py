@@ -1,4 +1,21 @@
 #!/usr/bin/python
-#-*- coding:UTF-8 -*-
+# -*- coding=utf-8 -*-
 
-print "你好,世界"
+x = 'a'
+y = 'b'
+
+print x
+print y
+
+print 'blabla'
+
+print x,
+print y
+
+a, b, c = 1, 2, "addy"
+
+print a,
+print b,
+print c
+
+del a,b
