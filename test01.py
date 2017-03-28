@@ -1,20 +1,18 @@
 #!/usr/bin/python
-# -*- coding: UTF-8 -*-
+# -*- coding:UTF-8 -*-
 
-a = 10
-b = 20
-list = [1,2,3,4,5];
-if(a in list):
-    print "a in list"
-else:
-    print "a not in list"
-if(b not in list):
-    print "b not in list"
-else:
-    print "b in the list"
+numbers = [12, 37, 5, 42, 8, 3]
+even = []
+odd = []
 
-a = 2
-if(a in list):
-    print "a in the list"
-else:
-    print "a not in the list"
+while len(numbers) > 0:
+    number = numbers.pop()
+    if(number % 2 == 0):
+        even.append(number)
+    else:
+        odd.append(number)
+
+
+print(even)
+
+print(odd)
