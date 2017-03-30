@@ -1,18 +1,17 @@
 #!/usr/bin/python
 # -*- coding:UTF-8 -*-
 
-numbers = [12, 37, 5, 42, 8, 3]
-even = []
-odd = []
+for letter in 'Python':
+    if letter == 'h':
+        break
+    print 'Current Letter :',letter
 
-while len(numbers) > 0:
-    number = numbers.pop()
-    if(number % 2 == 0):
-        even.append(number)
-    else:
-        odd.append(number)
+var = 10
 
+while var > 0:
+    print 'Current variable value :',var
+    var = var - 1
+    if var == 5:
+        break
 
-print(even)
-
-print(odd)
+print "Good bye!"
