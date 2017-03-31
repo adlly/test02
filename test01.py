@@ -1,22 +1,23 @@
 #!/usr/bin/python
 # -*- coding:UTF-8 -*-
 
-aa = "abc"
-bb = "efg"
+a = "Hello"
+b = "Python"
 
-print "aa[0]: ", aa[0]
+print "a+b 输出结果:", a+b
+print "a*2 输出结果:", a*2
+print "a[1] 输出结果:",a[1]
+print "a[1:4]输出结果:",a[1:4]
 
-print "bb[0:]", bb[0:]
+if("H" in a):
+    print "H in a"
+else:
+    print "H not in a"
 
+if("M" not in a):
+    print "M not in a"
+else:
+    print "M in a"
 
-cc = 'Hello World!\a'
-print "更新字符串: -",cc[:6]+""" ksjdfldjs"""
-
-
-dd = 'a'\
-    'b'\
-    'c'\
-    'd'
-print cc
-
-print dd
+print r'\n'
+print R'\n'
