@@ -1,23 +1,18 @@
 #!/usr/bin/python
-# -*- coding:UTF-8 -*-
 
-a = "Hello"
-b = "Python"
+list1 = ['physics', 'chemistry', 1997, 2000]
+list2 = [1,2,3,4,5,6,7]
 
-print "a+b 输出结果:", a+b
-print "a*2 输出结果:", a*2
-print "a[1] 输出结果:",a[1]
-print "a[1:4]输出结果:",a[1:4]
+print "list1[0]:", list1[0]
+print "list2[1:5]", list2[1:5]
 
-if("H" in a):
-    print "H in a"
-else:
-    print "H not in a"
+print "Value available at index 2 : "
+print list1[2]
+list1[2] = 2001
+print "New value available at index 2 : "
+print list1[2]
 
-if("M" not in a):
-    print "M not in a"
-else:
-    print "M in a"
+print list1
+del list1[2]
+print list1
 
-print r'\n'
-print R'\n'
