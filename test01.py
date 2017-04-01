@@ -1,15 +1,27 @@
 #!/usr/bin/python
 # -*- coding:UTF-8 -*-
 
-tup1 = ('aa', 11, 'ss')
-tup2 = (1,2,3,4,5)
+import time;
+import calendar;
 
-print "tup1[0]:", tup1[0]
-print "tup2[1:4]:", tup2[1:4]
+ticks = time.time()
+print "当前时间戳为:",ticks
 
-tup3 = tup1 + tup2
+localtime = time.localtime(time.time())
+print "本地时间为:",localtime
 
-print tup3
-del tup3;
-print "after deleting tup:"
-print tup3
+localtime2 = time.asctime(time.localtime(time.time()))
+print "本地时间为:",localtime2
+
+print time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
+
+print time.strftime("%y-%m-%d %H:%M:%S",time.localtime())
+
+print time.strftime("%a %b %d %H:%M:%S %Y",time.localtime())
+
+a="Sat Mar 28 22:24:24 2016"
+print time.mktime(time.strptime(a,"%a %b %d %H:%M:%S %Y"))
+
+cal = calendar.month(2016,1)
+print "以下输出2016年1月份的日历:"
+print cal;
