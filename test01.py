@@ -1,10 +1,12 @@
 #!/usr/bin/python
 # -*- coding:UTF-8 -*-
 
-def printinfo(name, age=15):
-    print "Name: ",name
-    print "Age: ",age
+def printinfo(arg1, *vartuple):
+    print "输出: "
+    print arg1
+    for var in vartuple:
+        print var
     return
 
-printinfo(age = 50, name = "miki")
-printinfo(name="miki")
+printinfo(10);
+printinfo(20,30,40)
