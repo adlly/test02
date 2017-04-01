@@ -1,12 +1,7 @@
 #!/usr/bin/python
 # -*- coding:UTF-8 -*-
 
-def printinfo(arg1, *vartuple):
-    print "输出: "
-    print arg1
-    for var in vartuple:
-        print var
-    return
+sum = lambda arg1, arg2: arg1 + arg2
 
-printinfo(10);
-printinfo(20,30,40)
+print "相加后的值为: ", sum(10,20)
+print "相加后的值为: ", sum(20,30)
