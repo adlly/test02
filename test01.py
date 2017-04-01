@@ -1,27 +1,19 @@
 #!/usr/bin/python
 # -*- coding:UTF-8 -*-
 
-import time;
-import calendar;
+def ChangeInt(a):
+    a = 10
 
-ticks = time.time()
-print "当前时间戳为:",ticks
+b = 2
+ChangeInt(b)
+print b
 
-localtime = time.localtime(time.time())
-print "本地时间为:",localtime
 
-localtime2 = time.asctime(time.localtime(time.time()))
-print "本地时间为:",localtime2
+def changeme(mylist2):
+    mylist2.append([1,2,3,4])
+    print "函数内取值:",mylist2
+    return
 
-print time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
-
-print time.strftime("%y-%m-%d %H:%M:%S",time.localtime())
-
-print time.strftime("%a %b %d %H:%M:%S %Y",time.localtime())
-
-a="Sat Mar 28 22:24:24 2016"
-print time.mktime(time.strptime(a,"%a %b %d %H:%M:%S %Y"))
-
-cal = calendar.month(2016,1)
-print "以下输出2016年1月份的日历:"
-print cal;
+mylist = [10,20,30]
+changeme(mylist)
+print "函数外取值:",mylist
